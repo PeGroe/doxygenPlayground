@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\ExampleComponent">
+      <UniqueIdentifier>{2a06b150-0862-4276-a1ac-bb7583577cfc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExampleComponent\SubComponentA">
+      <UniqueIdentifier>{9c0c0b2f-0f8b-44a0-8aa5-fd826cf2c920}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\ExampleComponent\SubComponentB">
+      <UniqueIdentifier>{0acf906a-4a43-4b00-bc35-14b7f3db0635}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="doxygenPlayground.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExampleComponent\MyBaseClass.cpp">
+      <Filter>Source Files\ExampleComponent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExampleComponent\SubComponentB\SubBaseClassB.cpp">
+      <Filter>Source Files\ExampleComponent\SubComponentB</Filter>
+    </ClCompile>
+    <ClCompile Include="..\ExampleComponent\SubComponentA\SubBaseClassA.cpp">
+      <Filter>Source Files\ExampleComponent\SubComponentA</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\ExampleComponent\IMyInterface.h">
+      <Filter>Source Files\ExampleComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExampleComponent\MyBaseClass.h">
+      <Filter>Source Files\ExampleComponent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExampleComponent\SubComponentA\ISubInterfaceA.h">
+      <Filter>Source Files\ExampleComponent\SubComponentA</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExampleComponent\SubComponentB\ISubInterfaceB.h">
+      <Filter>Source Files\ExampleComponent\SubComponentB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExampleComponent\SubComponentB\SubBaseClassB.h">
+      <Filter>Source Files\ExampleComponent\SubComponentB</Filter>
+    </ClInclude>
+    <ClInclude Include="..\ExampleComponent\SubComponentA\SubBaseClassA.h">
+      <Filter>Source Files\ExampleComponent\SubComponentA</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
